@@ -61,8 +61,8 @@
      visual-regexp
      markdown-mode
      fill-column-indicator
-     ;; flycheck
-     ;; flycheck-pos-tip
+     flycheck
+     flycheck-pos-tip
      flx
      flx-ido
      dired-details
@@ -73,16 +73,23 @@
      ido-at-point
      simple-httpd
      guide-key
-     ;; nodejs-repl
+     nodejs-repl
      restclient
      highlight-escape-sequences
      whitespace-cleanup-mode
      elisp-slime-nav
      git-commit-mode
      gitconfig-mode
-     ;; dockerfile-mode
+     dockerfile-mode
      gitignore-mode
-     ;; prodigy
+     prodigy
+     find-file-in-project
+     expand-region
+     tagedit
+     jump-char
+     skewer-mode
+     browse-kill-ring
+     smex
      )))
 
 (condition-case nil
@@ -148,18 +155,19 @@
 (eval-after-load 'scss-mode '(require 'setup-scss-mode))
 
 ;; web-mode load for these file extentions
-(dolist (ext ("\\.phtml\\'"
-              "\\.php\\'"
-              "\\.tpl\\.php\\'"
-              "\\.jsp\\'"
-              "\\.as[cp]x\\'"
-              "\\.erb\\'"
-              "\\.mustache\\'"
-              "\\.djhtml\\'"
-              "\\.html?\\'"
-              "\\.liquid\\'"
-              "\\.tmpl.html\\'"))
-  (add-to-list 'auto-mode-alist '(ext . web-mode))
+
+
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.liquid\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tmpl.html\\'" . web-mode))
 (eval-after-load 'web-mode '(require 'setup-web-mode))
 
 ;; Load stuff on demand
@@ -193,10 +201,10 @@
 (require 'delsel)
 (require 'jump-char)
 (require 'eproject)
-(require 'wgrep)
-(require 'smart-forward)
-(require 'change-inner)
-(require 'multifiles)
+;; (require 'wgrep)
+;; (require 'smart-forward)
+;; (require 'change-inner)
+;; (require 'multifiles)
 
 ;; Don't use expand-region fast keys
 (setq expand-region-fast-keys-enabled nil)
@@ -242,6 +250,4 @@
 ;; Conclude init by setting up specifics for the current user
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
-
-
 

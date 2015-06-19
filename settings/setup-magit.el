@@ -1,3 +1,5 @@
+(setq magit-last-seen-setup-instructions "1.4.0")
+
 ;; Subtler highlight
 (set-face-background 'magit-item-highlight "#121212")
 (set-face-background 'diff-file-header "#121212")
