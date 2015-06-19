@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Liquid Comment
+# key: lcomm
+# --
+{% comment %}$1{% endcomment %}$0

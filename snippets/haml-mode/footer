@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: footer
+# key: foot
+# --
+%footer $0

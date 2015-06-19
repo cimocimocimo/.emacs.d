@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: Liquid for loop
+# key: lfor
+# --
+{% for ${1:item} in ${2:array}${3: params} %}
+   $0
+{% endfor %}

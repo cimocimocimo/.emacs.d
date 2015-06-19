@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : div
+# --
+<div${1: class="${2:some_class}"}>
+  $0
+</div>

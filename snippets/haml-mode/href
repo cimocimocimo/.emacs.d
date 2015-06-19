@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Anchor Link
+# key: href
+# --
+%a(href="$1") $0

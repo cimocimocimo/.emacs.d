@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Stylesheet Tag
+# key: lstyle
+# --
+{{ "$1.css" | asset_url | stylesheet_tag }}
+$0

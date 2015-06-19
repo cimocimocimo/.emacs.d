@@ -1,0 +1,11 @@
+# name: Documentation Commanet
+# key: doccom
+# --
+/**
+ * $1
+ *
+ * $2
+ *
+ * @param (type) (name) about this param
+ * @return (type) (name)
+ */

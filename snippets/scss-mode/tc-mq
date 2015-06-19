@@ -1,0 +1,28 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: Theia - SCSS media query mixin
+# key: tc-mq
+# --
+/* most phones in portrait */
+@include at-query ($max, $small) {
+
+}
+
+/* portrait tablet, landscape phones */
+@include at-query (null, $postSmall, $medium) {
+
+}
+
+/* landscape tablet, small desktops */
+@include at-query (null, $postMedium, $large) {
+
+}
+
+/* medium desktops */
+@include at-query (null, $large, $xlarge) {
+
+}
+
+/* large desktops */
+@include at-query ($min, $xlarge) {
+
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Liquid if statement
+# key: lif
+# --
+{% if $1 %}
+$0
+{% endif %}

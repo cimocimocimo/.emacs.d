@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: HTML Comment
+# key: comm
+# --
+<!-- $1 -->$0

@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: text-transform
+# key: tt
+# --
+text-transform: ${1:$$(yas-choose-value '("none" "capitalize" "uppercase" "lowercase" "full-width"))};
+$0

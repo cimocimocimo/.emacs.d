@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name : Theia Couture - Settings Row Text Field
+# key : tc-srtf
+# --
+<tr>
+  <th>
+    <label for="${1:}">$2</label>${4:
+    <small>$5</small>}
+  </th>
+  <td><input id="$1" name="$1" type="text" value="" size="50" /></td>
+</tr>

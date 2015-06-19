@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Liquid Include
+# key: linc
+# --
+{% include '$1' %}
+$0

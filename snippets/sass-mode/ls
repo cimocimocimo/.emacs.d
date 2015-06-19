@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: letter-spacing
+# key: ls
+# --
+letter-spacing: $0px
