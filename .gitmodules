@@ -10,3 +10,15 @@
 [submodule "site-lisp/perspective"]
 	path = site-lisp/perspective
 	url = https://github.com/nex3/perspective-el.git
+[submodule "site-lisp/wgrep"]
+	path = site-lisp/wgrep
+	url = https://github.com/mhayashi1120/Emacs-wgrep.git
+[submodule "site-lisp/smart-forward"]
+	path = site-lisp/smart-forward
+	url = https://github.com/magnars/smart-forward.el.git
+[submodule "site-lisp/change-inner"]
+	path = site-lisp/change-inner
+	url = https://github.com/magnars/change-inner.el.git
+[submodule "site-lisp/multifiles"]
+	path = site-lisp/multifiles
+	url = https://github.com/magnars/multifiles.el.git

@@ -20,25 +20,25 @@
 ;; Use these to setup a night/day theme
 ;; have a night theme that works well with Flux
 
-;; (defun use-presentation-theme ()
-;;   (interactive)
-;;   (when (boundp 'magnars/presentation-font)
-;;     (set-face-attribute 'default nil :font magnars/presentation-font)))
+(defun use-presentation-theme ()
+  (interactive)
+  (when (boundp 'aaron/presentation-font)
+    (set-face-attribute 'default nil :font aaron/presentation-font)))
 
 (defun use-default-theme ()
   (interactive)
-  (load-theme 'cyberpunk t))
-  ;; (when (boundp 'magnars/default-font)
-  ;;   (set-face-attribute 'default nil :font magnars/default-font)))
+  (when (boundp 'aaron/default-font)
+    (set-face-attribute 'default nil :font aaron/default-font)))
 
-;; (defun toggle-presentation-mode ()
-;;   (interactive)
-;;   (if (string= (frame-parameter nil 'font) magnars/default-font)
-;;       (use-presentation-theme)
-;;     (use-default-theme)))
+(defun toggle-presentation-mode ()
+  (interactive)
+  (if (string= (frame-parameter nil 'font) aaron/default-font)
+      (use-presentation-theme)
+    (use-default-theme)))
 
-;; (global-set-key (kbd "C-<f9>") 'toggle-presentation-mode)
+(global-set-key (kbd "C-<f9>") 'toggle-presentation-mode)
 
+(load-theme 'cyberpunk t)
 (use-default-theme)
 
 
@@ -68,7 +68,6 @@
 (eval-after-load "skewer-html" '(diminish 'skewer-html-mode))
 (eval-after-load "smartparens" '(diminish 'smartparens-mode))
 (eval-after-load "guide-key" '(diminish 'guide-key-mode))
-(eval-after-load "magit" '(diminish 'magit-auto-revert-mode))
 (eval-after-load "whitespace-cleanup-mode" '(diminish 'whitespace-cleanup-mode))
 (eval-after-load "subword" '(diminish 'subword-mode))
 

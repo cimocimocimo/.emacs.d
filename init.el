@@ -78,7 +78,6 @@
      highlight-escape-sequences
      whitespace-cleanup-mode
      elisp-slime-nav
-     git-commit-mode
      gitconfig-mode
      dockerfile-mode
      gitignore-mode
@@ -155,8 +154,7 @@
 (eval-after-load 'scss-mode '(require 'setup-scss-mode))
 
 ;; web-mode load for these file extentions
-
-
+(eval-after-load 'web-mode '(require 'setup-web-mode))
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
@@ -168,7 +166,6 @@
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.liquid\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tmpl.html\\'" . web-mode))
-(eval-after-load 'web-mode '(require 'setup-web-mode))
 
 ;; Load stuff on demand
 (autoload 'skewer-start "setup-skewer" nil t)
@@ -201,10 +198,10 @@
 (require 'delsel)
 (require 'jump-char)
 (require 'eproject)
-;; (require 'wgrep)
-;; (require 'smart-forward)
-;; (require 'change-inner)
-;; (require 'multifiles)
+(require 'wgrep)
+(require 'smart-forward)
+(require 'change-inner)
+(require 'multifiles)
 
 ;; Don't use expand-region fast keys
 (setq expand-region-fast-keys-enabled nil)

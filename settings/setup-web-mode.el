@@ -1,4 +1,3 @@
-(require 'web-mode)
 
 (setq web-mode-engines-alist
       '(("django"    . "\\.tmpl.html\\'"))
@@ -19,3 +18,5 @@
 (setq web-mode-script-padding 4)
 ;; For multi-line blocks
 (setq web-mode-block-padding 0)
+
+(provide 'setup-web-mode)
