@@ -1,0 +1,17 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: Daily Journal - Morning Entry
+# key: dj-morn
+# binding: direct-keybinding
+# --
+I am grateful for...
+1) $1
+2) $2
+3) $3
+
+What would make today great... 
+1) $4
+2) $5
+3) $6
+
+Daily affirmations. I am...
+$0

@@ -15,4 +15,8 @@
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map (kbd "M-<f6>") 'org-capture)
 
+;; org-journal
+(setq org-journal-dir "~/Dropbox/journal/")
+(setq org-journal-date-format "%A %B %e, %Y - (y%Ym%md%d)")
+
 (provide 'setup-org)

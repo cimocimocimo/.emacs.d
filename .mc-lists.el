@@ -3,11 +3,21 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        electric-newline-and-maybe-indent
+        js2r-kill
         kill-region-or-backward-word
+        open-line-and-indent
+        paredit-backward-kill-word
+        paredit-forward-delete
+        paredit-forward-kill-word
+        paredit-kill
         paredit-kill-region-or-backward-word
         paredit-semicolon
+        yas-expand
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        save-region-or-current-line
+        yaml-electric-backspace
         ))

@@ -5,5 +5,6 @@
   ;; (flymake-mode-on)
   )
 (add-hook 'scss-mode-hook 'my-scss-mode-hook)
+(add-hook 'scss-mode-hook 'turn-on-css-eldoc)
 
 (provide 'setup-scss-mode)

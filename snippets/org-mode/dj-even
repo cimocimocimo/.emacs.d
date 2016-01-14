@@ -1,0 +1,12 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: Daily Journal - Evening Entry
+# key: dj-even
+# binding: direct-keybinding
+# --
+3 amazing things that happened today...
+1) $1
+2) $2
+3) $3
+
+How could I have made today better?
+$0

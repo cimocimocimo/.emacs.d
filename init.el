@@ -89,6 +89,7 @@
      skewer-mode
      browse-kill-ring
      smex
+     vlf
      )))
 
 (condition-case nil
@@ -125,6 +126,7 @@
 (require 'setup-ffip)
 (require 'setup-html-mode)
 (require 'setup-paredit)
+(require 'vlf-setup)
 
 (require 'prodigy)
 (global-set-key (kbd "C-x M-m") 'prodigy)
@@ -228,7 +230,6 @@
 (require 'project-archetypes)
 (require 'my-misc)
 (when is-mac (require 'mac))
-
 
 ;; Elisp go-to-definition with M-. and back again with M-,
 (autoload 'elisp-slime-nav-mode "elisp-slime-nav")
