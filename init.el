@@ -90,6 +90,8 @@
      browse-kill-ring
      smex
      vlf
+     org-journal
+     ssh-config-mode
      )))
 
 (condition-case nil

@@ -15,6 +15,7 @@
 ;; SCSS
 (autoload 'scss-mode "scss-mode")
 (add-to-list 'auto-mode-alist '("\\.scss\(?:\.liquid\)?$" . scss-mode))
+(add-to-list 'auto-mode-alist '("\\.scss$" . scss-mode))
 
 ;; Restclient
 (add-to-list 'auto-mode-alist '("\\.restclient$" . restclient-mode))
@@ -110,5 +111,13 @@
 (add-to-list 'auto-mode-alist '("srm\\.conf\\'"    . apache-mode))
 (add-to-list 'auto-mode-alist '("access\\.conf\\'" . apache-mode))
 (add-to-list 'auto-mode-alist '("sites-\\(available\\|enabled\\)/" . apache-mode))
+
+;; ssh config mode
+(autoload 'ssh-config-mode "ssh-config-mode" t)
+(add-to-list 'auto-mode-alist '(".ssh/config\\'"       . ssh-config-mode))
+(add-to-list 'auto-mode-alist '("sshd?_config\\'"      . ssh-config-mode))
+(add-to-list 'auto-mode-alist '("known_hosts\\'"       . ssh-known-hosts-mode))
+(add-to-list 'auto-mode-alist '("authorized_keys2?\\'" . ssh-authorized-keys-mode))
+(add-hook 'ssh-config-mode-hook 'turn-on-font-lock)
 
 (provide 'mode-mappings)
