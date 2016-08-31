@@ -150,12 +150,15 @@
 
 ;; Language specific setup files
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx?\\'" . js2-mode))
+
 (eval-after-load 'ruby-mode '(require 'setup-ruby-mode))
 (eval-after-load 'clojure-mode '(require 'setup-clojure-mode))
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
 (eval-after-load 'haml-mode '(require 'setup-haml-mode))
 (eval-after-load 'sass-mode '(require 'setup-sass-mode))
 (eval-after-load 'scss-mode '(require 'setup-scss-mode))
+(eval-after-load 'json-mode '(require 'setup-json-mode))
 
 ;; web-mode load for these file extentions
 (eval-after-load 'web-mode '(require 'setup-web-mode))
