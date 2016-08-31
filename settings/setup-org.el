@@ -14,6 +14,8 @@
 (setq org-directory "~/Dropbox/org")
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map (kbd "M-<f6>") 'org-capture)
+(define-key global-map (kbd "C-c l") 'org-store-link)
+(define-key global-map  (kbd "C-c a") 'org-agenda)
 
 ;; org-journal
 (setq org-journal-dir "~/Dropbox/journal/")
