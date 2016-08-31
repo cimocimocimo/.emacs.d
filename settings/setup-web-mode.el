@@ -1,4 +1,3 @@
-
 (setq web-mode-engines-alist
       '(("django"    . "\\.tmpl.html\\'"))
       )
@@ -18,5 +17,8 @@
 (setq web-mode-script-padding 4)
 ;; For multi-line blocks
 (setq web-mode-block-padding 0)
+
+;; Allow manual engine selection in file and directory local vars
+(setq web-mode-enable-engine-detection t)
 
 (provide 'setup-web-mode)
