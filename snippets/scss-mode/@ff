@@ -1,0 +1,30 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: @font-face
+# key: @ff
+# binding: direct-keybinding
+# --
+# based on this https://css-tricks.com/snippets/css/using-font-face/
+@font-face {
+font-family: 'MyWebFont';
+src: url('webfont.eot'); /* IE9 Compat Modes */
+src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+        
+
+@font-face {
+  font-family: '${1:font_name}';
+  src: url('AvenirNext-Regular.eot'); /* IE9 Compat Modes */
+  src: url('AvenirNext-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('AvenirNext-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('AvenirNext-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AvenirNext-Regular.svg#fe299bf9c71888f1da7b2c2d74973b56') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+$0

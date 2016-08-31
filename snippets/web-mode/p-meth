@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: true -*-
+# name: PHP method
+# key: p-meth
+# --
+$1${2:$$(yas-choose-value '("public" "protected" "private"))} function $3($4){
+    $0
+}
