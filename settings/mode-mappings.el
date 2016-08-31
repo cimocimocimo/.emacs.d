@@ -14,33 +14,21 @@
 
 ;; SCSS
 (autoload 'scss-mode "scss-mode")
-(add-to-list 'auto-mode-alist '("\\.scss\(?:\.liquid\)?$" . scss-mode))
+(add-to-list 'auto-mode-alist '("\\.scss.liquid$" . scss-mode))
 (add-to-list 'auto-mode-alist '("\\.scss$" . scss-mode))
 
 ;; Restclient
 (add-to-list 'auto-mode-alist '("\\.restclient$" . restclient-mode))
 
-;; Cucumber
-(autoload 'feature-mode "feature-mode")
-(add-to-list 'auto-mode-alist '("\\.feature$" . feature-mode))
-
-;; Adventur
-(autoload 'adventur-mode "adventur-mode")
-(add-to-list 'auto-mode-alist '("\\.adv$" . adventur-mode))
-
 ;; Jade and Stylus (sws = significant whitespace)
-(autoload 'sws-mode "sws-mode")
-(autoload 'jade-mode "jade-mode")
-(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
-(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+;; TODO: investigate if sws-mode can help with python-mode
+;; (autoload 'sws-mode "sws-mode")
+;; (autoload 'jade-mode "jade-mode")
+;; (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+;; (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
 ;; HTML and other HTML-like templates
 (autoload 'web-mode "web-mode")
-
-;; JSP
-(autoload 'crappy-jsp-mode "crappy-jsp-mode")
-(add-to-list 'auto-mode-alist '("\\.jsp$" . crappy-jsp-mode))
-(add-to-list 'auto-mode-alist '("\\.jspf$" . crappy-jsp-mode))
 
 ;; Ruby
 (autoload 'rhtml-mode "rhtml-mode")
@@ -53,26 +41,6 @@
 (add-to-list 'auto-mode-alist '("Vagrantfile" . ruby-mode))
 (add-to-list 'auto-mode-alist '("capfile" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
-
-;; Puppet
-(autoload 'puppet-mode "puppet-mode")
-(add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))
-
-;; Groovy
-(autoload 'groovy-mode "groovy-mode")
-(add-to-list 'auto-mode-alist '("\\.groovy$" . groovy-mode))
-(add-to-list 'auto-mode-alist '("\\.gradle$" . groovy-mode))
-
-;; Scala
-(autoload 'scala-mode "scala-mode2")
-(add-to-list 'auto-mode-alist '("\\.scala$" . scala-mode))
-(autoload 'ensime-scala-mode-hook "ensime")
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-
-;; Clojure
-(autoload 'clojure-mode "clojure-mode")
-(add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
-(add-to-list 'auto-mode-alist '("\\.cljs$" . clojure-mode))
 
 ;; SVG
 (add-to-list 'auto-mode-alist '("\\.svg$" . image-mode))
@@ -91,11 +59,6 @@
 (add-to-list 'auto-mode-alist '("yasnippet/snippets" . snippet-mode))
 (add-to-list 'auto-mode-alist '("\\.yasnippet$" . snippet-mode))
 
-;; Buster.JS
-;(autoload 'buster-mode "buster-mode")
-;(setq buster-node-executable "/usr/local/bin/node")
-;(add-file-find-hook-with-pattern "test\\.js$" (lambda () (buster-mode)) "require(\\(\"\\|'\\)buster")
-
 ;; Markdown
 (autoload 'markdown-mode "markdown-mode")
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
@@ -103,14 +66,6 @@
 
 ;; org-mode
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-
-;; Apache config
-(autoload 'apache-mode "apache-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.htaccess\\'"   . apache-mode))
-(add-to-list 'auto-mode-alist '("httpd\\.conf\\'"  . apache-mode))
-(add-to-list 'auto-mode-alist '("srm\\.conf\\'"    . apache-mode))
-(add-to-list 'auto-mode-alist '("access\\.conf\\'" . apache-mode))
-(add-to-list 'auto-mode-alist '("sites-\\(available\\|enabled\\)/" . apache-mode))
 
 ;; ssh config mode
 (autoload 'ssh-config-mode "ssh-config-mode" t)
