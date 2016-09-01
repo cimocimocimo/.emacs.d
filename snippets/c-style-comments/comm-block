@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Comment Block
+# key: comm-block
+# --
+/*
+ * ${1:Comment}
+ */
+$0

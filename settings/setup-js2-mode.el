@@ -28,7 +28,7 @@
 (js2-imenu-extras-setup)
 
 ;; jscs
-(add-hook 'js2-mode-hook #'jscs-indent-apply)
+;; (add-hook 'js2-mode-hook 'jscs-indent-apply)
 
 ;; Set up wrapping of pairs, with the possiblity of semicolons thrown into the mix
 
