@@ -43,6 +43,8 @@
 (setq vc-make-backup-files t)
 
 ;; Save point position between sessions
+;; TODO: when emacs 25.1 is released update these settings
+;; https://www.emacswiki.org/emacs/SavePlace
 (require 'saveplace)
 (setq-default save-place t)
 (setq save-place-file (expand-file-name ".places" user-emacs-directory))
