@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Subsection Comment Block
+# key: comm-subsec
+# --
+/*${1:$(make-string (floor (/ (- fill-column 8 (string-width yas-text)) 2.0)) ?\=)}  ${1:Comment}  ${1:$(make-string (ceiling (/ (- fill-column 8 (string-width yas-text)) 2.0)) ?\=)}*/
+
+$0

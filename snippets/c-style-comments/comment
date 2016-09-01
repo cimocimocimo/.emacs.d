@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: comment
+# uuid: c-style-comment
+# key: comm
+# --
+/* $1 */
+
+$0
